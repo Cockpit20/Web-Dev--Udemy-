@@ -4,8 +4,8 @@
 
 <% newPosts.forEach((newPost)=>{ %>
     <h1><%= newPost.title %></h1>
-    <% const postContent= newPost.post.substring(0,100); %>
-    <p> <%= postContent %> ... <a href="/posts/<%=newPost.title%>">Read More</a></p>
+    <% const postContent= newPost.content.substring(0,100); %>
+    <p> <%= postContent %> ... <a href="/posts/<%=newPost._id%>">Read More</a></p>
     
 <% }) %>
 <%- include("partials/footer") -%>
