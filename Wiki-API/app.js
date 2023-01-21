@@ -16,7 +16,7 @@ app.use(express.static("public"));
 
 //TODO
 mongoose.set(`strictQuery`, false);
-mongoose.connect("mongodb://localhost:27017/wikiDB", { useNewUrlParser: true });
+mongoose.connect("mongodb://127.0.0.1:27017/wikiDB", { useNewUrlParser: true });
 
 const articlesSchema = {
     title: String,
