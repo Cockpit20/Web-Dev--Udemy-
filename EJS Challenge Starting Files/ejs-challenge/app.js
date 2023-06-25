@@ -1,5 +1,4 @@
 //jshint esversion:6
-
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
@@ -18,7 +17,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 mongoose.set(`strictQuery`,false);
-mongoose.connect("mongodb://localhost:27017/postsDB",{ useNewUrlParser: true });
+mongoose.connect("mongodb://127.0.0.1:27017/postsDB",{ useNewUrlParser: true });
 
 const postsSchema={
   title: String,
